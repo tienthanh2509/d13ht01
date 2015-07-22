@@ -15,6 +15,21 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
+# Auto test
+echo -e "\e[44mAuto testing...\e[0m"
+PWD=`pwd`
+#pear channel-discover pear.phpunit.de
+#pear channel-discover pear.symfony.com
+#pear install phpunit/PHPUnit
+#pear channel-discover pear.bovigo.org
+#pear install bovigo/vfsStream-beta
+
+cd "include/CodeIgniter"
+#composer install
+phpunit -d zend.enable_gc=0 -d date.timezone=UTC --coverage-text --configuration "tests/phpunit.xml"
+phpunit -d zend.enable_gc=0 -d date.timezone=UTC --coverage-text --configuration "tests/travis/mysqli.phpunit.xml"
+cd $PWD
+
 # Language pack for CodeIgniter
 echo -e "\e[44mInstalling language pack...\e[0m"
 wget --no-check-certificate "https://github.com/bcit-ci/codeigniter3-translations/archive/develop.zip" -O "cache/ci-language-pack.zip"
