@@ -1,0 +1,41 @@
+﻿# Created by https://www.gitignore.io & custom by Phạm Tiến Thành
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+### CodeIgnitor ###
+application/config/development
+application/logs/log-*.php
+application/logs/!index.html
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+### Other ###
+composer.lock
+/vendor/*
+!/vendor/index.html
+!/vendor/.htaccess
+/cache/
+!/cache/index.html
+!/cache/.htaccess
+/data/
+!/data/index.html
+!/data/.htaccess
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+*.stackdump
+*~

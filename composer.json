@@ -1,0 +1,17 @@
+{
+	"description": "D13HT01 Website",
+	"name": "tienthanh2509/d13ht01",
+	"type": "project",
+	"homepage": "https://github.com/tienthanh2509/d13ht01",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Phạm Tiến Thành",
+			"email": "tienthanh.dqc@gmail.com",
+			"homepage": "https://github.com/tienthanh2509"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	}
+}
