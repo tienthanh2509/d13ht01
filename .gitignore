@@ -10,7 +10,7 @@ nbactions.xml
 nb-configuration.xml
 .nb-gradle/
 
-### CodeIgnitor ###
+### CodeIgniter ###
 application/config/development
 application/logs/log-*.php
 application/logs/!index.html

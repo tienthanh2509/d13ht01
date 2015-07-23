@@ -1,3 +1,4 @@
 [submodule "include/CodeIgniter"]
 	path = include/CodeIgniter
 	url = git@github.com:bcit-ci/CodeIgniter.git
+	ignore = dirty
