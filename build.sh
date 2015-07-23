@@ -1,5 +1,7 @@
 #!/bin/sh
 
+PWD=`pwd`
+
 # Check build tool
 command -v git >/dev/null 2>&1 || { echo "git is required but it's not installed.  Aborting." >&2; exit 1; }
 command -v composer >/dev/null 2>&1 || { echo "composer is required but it's not installed.  Aborting." >&2; exit 1; }
@@ -15,9 +17,16 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
+codeigniter=`cat "include/CodeIgniter/.git"`
+rm -rf "include/CodeIgniter/*"
+echo $codeigniter > "include/CodeIgniter/.git"
+cd "include/CodeIgniter/"
+git checkout "system/"
+git checkout "tests/"
+cd $PWD
+
 # Auto test
 echo -e "\e[44mAuto testing...\e[0m"
-PWD=`pwd`
 #pear channel-discover pear.phpunit.de
 #pear channel-discover pear.symfony.com
 #pear install phpunit/PHPUnit
