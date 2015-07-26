@@ -29,6 +29,7 @@ composer.lock
 /data/
 !/data/index.html
 !/data/.htaccess
+/public/assets/bower_components/
 
 # Windows image file caches
 Thumbs.db

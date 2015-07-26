@@ -1,0 +1,26 @@
+{
+  "name": "d13ht01",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tienthanh2509/d13ht01",
+  "authors": [
+    "Pham Tien Thanh <tienthanh.dqc@gmail.com>"
+  ],
+  "description": "D13HT01's WebSite",
+  "keywords": [
+    "codeigniter",
+    "php",
+    "d13ht01"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
